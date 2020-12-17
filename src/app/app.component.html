@@ -1,0 +1,174 @@
+
+<div class="example-container">
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <mat-icon class="menus">menu</mat-icon>
+      
+      <img class="logo" src="../assets/trimble 1.png">
+      <div class="rightside">
+        <a> <i class="fa fa-search"></i> </a>
+        <a> <i class="fa fa-bell"></i></a>
+        <a> <i class='far fa-calendar-alt'></i> </a>
+        <a> <i class='fas fa-user-alt'></i></a>
+
+    </div>
+
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container" autosize>
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" >
+      
+      <mat-nav-list class="dashboard" style="height: 50%;">
+      
+        <a mat-list-item >
+          <i class='fas fa-home'></i>
+        
+        </a>
+        <a mat-list-item >
+          <i class='fas fa-car-side'></i> 
+        </a>
+        <a mat-list-item >
+          <i class='far fa-sun'></i>
+        </a>
+        <a mat-list-item >
+         <i class='fas fa-code-branch'></i>
+        </a>
+        <a mat-list-item >
+          <i class='fas fa-chart-line'></i>
+         </a>
+         <a mat-list-item  style="position: relative;  top: 90%; color: #005F9E;" >
+           <i class='fas fa-sign-out-alt'></i>
+        </a>
+      
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      
+      <div  class="rectangle">
+          <button mat-raised-button class="btns"><i class='fas fa-angle-left'></i>&nbsp; Back</button>
+          <p>FLEET</p>
+          <form class="example">
+            <input type="text" class="fa" placeholder="SEARCH">
+            <button type="submit">Go</button>
+        </form>
+        <button mat-raised-button class="btnt"> ADDITIONAL FILTERS &nbsp;<i class='fas fa-angle-down'></i></button>
+        
+      </div>
+
+      <div class="link">
+        <button mat-raised-button class="btnp"><i class='fas fa-industry'></i></button>
+    
+    
+        <button mat-raised-button class="btnp1"><i class='fas fa-plus'></i></button>
+        <button mat-raised-button disabled class="btnp2"><i class="fa fa-trash"></i></button>
+        <button mat-raised-button disabled class="btnp3"><i class="fa fa-close"></i></button>
+        <button  mat-raised-button disabled class="btnp4"><i class='far fa-save'></i></button>
+
+        <button mat-raised-button class="btnp5"><i class='fas fa-funnel-dollar'></i></button>
+        <button mat-raised-button class="btnp6"><i class='fas fa-clipboard-list'></i></button>
+        <button mat-raised-button class="btnp7"><i class='fas fa-sort-amount-down-alt'></i></button>
+        <button mat-raised-button class="btnp8"><i class='fas fa-heart'></i></button>
+        <button mat-raised-button class="btnp9"><i class='fas fa-paper-plane'></i></button>
+        <button mat-raised-button class="btnp10"><i class='fas fa-list-ul'></i></button>
+        <button mat-raised-button class="btnp11"> (310) ALL ASSETS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-angle-down'></i></button>
+        <button mat-raised-button class="btnp12"><i class='fas fa-redo'></i></button>
+        <button mat-raised-button class="btnp13"><i class='fas fa-list-ul'></i></button>
+        <button mat-raised-button class="btnp14"><i class="fa fa-close"></i></button>
+       </div>
+       
+
+      <div class="map">
+       
+         <img src="../assets/image 10.png" style="width: 100%; height: 320px;">
+            
+      </div>
+
+      <div class="lists">
+        <p>FLEET LIST</p>
+        <button mat-raised-button class="btnp11"> (310) ALL ASSETS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-angle-down'></i></button>
+        <button mat-raised-button class="btnp12"><i class='fas fa-redo'></i></button>
+        <button mat-raised-button class="btnp13"><i class='fas fa-list-ul'></i></button>
+        <button mat-raised-button class="btnp14"><i class="fa fa-close"></i></button>
+    </div>
+
+
+    <div class="tds">          
+     
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+        
+       <ng-container matColumnDef="select">
+           <th mat-header-cell *matHeaderCellDef>    <mat-checkbox ></mat-checkbox></th>
+          <td mat-cell *matCellDef="let element">    <mat-checkbox ></mat-checkbox> </td>
+       </ng-container>
+      
+       <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef>    <i class='fas fa-map-marker-alt'></i></th>
+       <td mat-cell *matCellDef="let element">    <i class='fas fa-map-marker-alt'></i></td>
+      </ng-container>
+
+      <ng-container matColumnDef="asset">
+        <th mat-header-cell *matHeaderCellDef>    ASSETS</th>
+       <td mat-cell *matCellDef="let element">   <img src="../assets/image 21.png"></td>
+      </ng-container>
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let element"> <a style=" text-decoration-line: underline;color: #DA291C;">0000323</a></td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> MODEL </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef>SERIAL NO. </th>
+          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef>LATEST UTILIZATION<BR>REPORT</th>
+          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="runtime_target">
+          <th mat-header-cell *matHeaderCellDef>RUNTIME TARGET<BR>(HOURS)</th>
+          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="runtime">
+          <th mat-header-cell *matHeaderCellDef>RUNTIME<BR>(HOURS)</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="runtime_fuel">
+          <th mat-header-cell *matHeaderCellDef>RUNTIME FUEL<BR>(GAL)</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="runtime_burn">
+          <th mat-header-cell *matHeaderCellDef>RUNTIME BURN RATE<BR>(GAL/HOURS)</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+    
+    </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+
+  <router-outlet></router-outlet>
+
+</div>
