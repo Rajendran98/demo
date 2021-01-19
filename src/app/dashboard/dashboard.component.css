@@ -1,0 +1,373 @@
+
+.one{
+    position: relative;
+    top: 42px;
+    left: 70px;
+    height: 378px;
+   
+    max-width: 467px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.btnp {
+    height: 40px;
+    width: 203px;
+    position: absolute;
+    background: #005F9E;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.oneicon{
+    position: relative;
+    left: 430px;
+   height: 40px;
+   width: 40px;
+    top: 3px;
+   font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #666666;
+}
+
+.pl{
+    height: 64px; width: 100%;  background: white; border-radius: 5px;
+}
+
+.btnp11 {
+    height: 40px;
+    width: 410px;
+    position: absolute;
+   left: 28px;
+ 
+    top: 62px;
+    background: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 700;
+    color: #666666;
+  
+    border-radius: 5px;
+    border-color: #FFFFFF;
+  }
+
+  .onescolumn{
+      margin-top: 25px;
+  }
+
+  .onescolumn p{
+      height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #666666;
+  }
+  .square {
+    height: 30px;
+    width: 30px;
+    border-radius:5px;
+    background: #EB5757;
+
+   text-align: right;
+    margin-top: -5px;
+  }
+  .square1 {
+    height: 30px;
+    width: 30px;
+    border-radius:5px;
+    background: #48C581;
+   text-align: right;
+    margin-top: 10px;
+  }
+
+  .square2 {
+    height: 30px;
+    width: 30px;
+    border-radius:5px;
+    background: #CCCCCC;
+
+   text-align: right;
+    margin-top: 10px;
+  }
+  
+  .square3 {
+    height: 30px;
+    width: 30px;
+    border-radius:5px;
+    background: #F2C94C;
+
+   text-align: right;
+    margin-top: 10px;
+  }
+  
+  .square4 {
+    height: 30px;
+    width: 30px;
+    border-radius:5px;
+    background: #666666;
+
+   text-align: right;
+    margin-top: 10px;
+  }
+  
+  .two{
+    position: relative;
+    top: 42px;
+    height: 378px;
+    max-width: 467px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+.one1{
+    position: relative;
+    top: 90px;
+    left: 70px;
+    height: 430px;
+   
+    max-width: 467px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.two1{
+    position: relative;
+    top: 90px;
+    height: 430px;
+    max-width: 467px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.two1 .texts{
+    position: relative;
+    top: 143px;
+    left: 150px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #666666;
+}
+
+.toog{
+ 
+  position: relative;
+  top: 10px;
+  left: 80px;
+  border-radius: 5px;
+
+  font-family: Roboto;
+font-style: normal;
+
+
+color: #666666;
+}
+.fuel{
+    width: 327px;
+    height: 230px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.fuelt{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+/* Text color-666 */
+
+color: #666666;
+}
+
+.one2{
+  position: relative;
+  top: 120px;
+  left: 70px;
+  height: 503px;
+  max-width: 480px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+mat-button-toggle {
+  width: 100px;
+}
+
+.mat-button-toggle-checked{
+  background: #005F9E;
+
+  color: white;
+}
+
+.two2{
+  position: relative;
+  top: 120px;
+  height: 430px;
+  max-width: 467px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.map{
+  position: relative;
+  top: 150px;
+  left: 80px;
+  height: 440px;
+ 
+  max-width: 1050px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.mapone{
+  position: absolute;
+  left: 960px;
+ height: 40px;
+ width: 40px;
+  top: 3px;
+ font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #666666;
+}
+
+.maptwo{
+  position: absolute;
+  left: 1010px;
+ height: 40px;
+ width: 40px;
+  top: 3px;
+ font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #666666;
+}
+
+.paras{
+  height: 64px; width: 1050px;  
+  background: #ABEFCA;
+
+  border-radius: 5px;
+  position: absolute; 
+  top: 50px;
+}
+
+.mapimage{
+  position: absolute;
+  top: 114px;
+  width: 1050px;
+  height: 280px;
+}
+
+.foot{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  
+  /* Text-666 */
+  
+  color: #666666;
+  position: absolute; 
+  top: 410px;
+  left: 350px;
+}
+
+.paras p{
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 850px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+color: #666666;
+}
+
+@media only screen and (max-width:768px) {
+  .mainpg{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .map{
+    position: relative;
+    top: 150px;
+    left: 0px;
+    height: 500px;
+   
+    max-width: 100%;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+  }
+}

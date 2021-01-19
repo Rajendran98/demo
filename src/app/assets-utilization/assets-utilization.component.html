@@ -1,0 +1,26 @@
+<div class="two">
+
+    <button mat-raised-button class="btnp"> ASSET UTILIZATION &nbsp;&nbsp;<i class='fas fa-close'></i></button>
+    <p class="oneicon"> <i class='fas fa-list-ul'></i></p>
+  
+  
+    <div class="pl" >
+        <mat-form-field  appearance="outline" class="froms" >
+
+            <mat-select [(value)]="selected">
+              <mat-option value="option1">ONE ASSETS</mat-option>
+              <mat-option value="option2">(1925) ALL ASSETS</mat-option>
+              <mat-option value="option3">TWO ASSETS</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <mat-button-toggle-group name="network" class="toog" [(ngModel)]="network">
+        <mat-button-toggle value="ON">AVERAGE</mat-button-toggle>
+        <mat-button-toggle value="OFF">TOTAL</mat-button-toggle>
+      
+    
+    </mat-button-toggle-group>
+
+    <div id="chart3"></div>
+</div>

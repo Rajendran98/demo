@@ -1,0 +1,19 @@
+
+  mat-card {
+    width: 40%;
+    margin: 5% auto;
+    border-radius: 8px;
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  .btn{
+    margin-top: 10px;
+    width: 150px;
+    background: #005F9E;
+    border-radius: 5px;
+  }
+
+  .invalid-feedback{
+    color: red;
+  }

@@ -1,24 +1,16 @@
-import { Component } from '@angular/core';
+import {COMMA, ENTER} from '@angular/cdk/keycodes';
+import {Component, ElementRef, ViewChild} from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {MatAutocompleteSelectedEvent, MatAutocomplete} from '@angular/material/autocomplete';
+import {MatChipInputEvent} from '@angular/material/chips';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 
-export interface PeriodicElement {
+import { Router } from '@angular/router';
+
+export interface Fruit {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
 }
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
 
 @Component({
   selector: 'app-root',
@@ -27,7 +19,72 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AppComponent {
   title = 'myapp';
+  visible = true;
+  selectable = true;
+  removable = true;
+  addOnBlur = true;
+  readonly separatorKeysCodes: number[] = [ENTER, COMMA];
+  fruits: Fruit[] = [
+    {name: 'Lemon'},
+    {name: 'Lime'},
+    {name: 'Apple'},
+  ];
 
-  displayedColumns: string[] = ['select','icon','asset', 'position', 'name', 'weight', 'symbol','runtime_target','runtime','runtime_fuel','runtime_burn'];
-  dataSource = ELEMENT_DATA;
+  constructor(
+    private router: Router) {
+     }
+
+     element: HTMLElement;
+     toggleActive(event:any){
+      
+      event.preventDefault();
+      if(this.element !== undefined){
+        this.element.style.backgroundColor = "white";
+        this.element.style.color = "#666666";
+      } 
+      var target = event.currentTarget;
+      target.style.backgroundColor = "#005F9E";
+      target.style.color = "white"
+      this.element = target;
+    }
+
+    dashboard(){
+      this.router.navigate(['dashboard']);
+      console.log('dashboard');
+    }
+    fleet(){
+      this.router.navigate(['fleet']);
+      console.log('fleet');
+    }
+    login(){
+      this.router.navigate(['login']);
+      console.log('login');
+    }
+    application(){
+      this.router.navigate(['application']);
+      console.log('application');
+    }
+    
+    add(event: MatChipInputEvent): void {
+      const input = event.input;
+      const value = event.value;
+  
+      // Add our fruit
+      if ((value || '').trim()) {
+        this.fruits.push({name: value.trim()});
+      }
+  
+      // Reset the input value
+      if (input) {
+        input.value = '';
+      }
+    }
+  
+    remove(fruit: Fruit): void {
+      const index = this.fruits.indexOf(fruit);
+  
+      if (index >= 0) {
+        this.fruits.splice(index, 1);
+      }
+    }
 }

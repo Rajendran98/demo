@@ -1,0 +1,123 @@
+.two1{
+    position: relative;
+    top: 90px;
+    height: 430px;
+    width: 467px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.two1 .texts{
+    position: relative;
+    top: 143px;
+    left: 150px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #666666;
+}
+
+
+.btnp {
+    height: 40px;
+    width: 203px;
+    position: absolute;
+    background: #005F9E;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.oneicon{
+    position: relative;
+    left: 430px;
+   height: 40px;
+   width: 40px;
+    top: 3px;
+   font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #666666;
+}
+
+
+
+.pl{
+    height: 64px; width: 100%;  background: white; border-radius: 5px;
+}
+
+.froms{
+    width: 410px;margin-left: 25px
+  }
+
+@media only screen and (max-width:768px) {
+   
+    .two1{
+        position: relative;
+        top: 90px;
+        height: 430px;
+        width: 100%;
+        background: #F5F5F5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+        .btnp {
+          height: 40px;
+          width: 130px;
+          font-size: small;
+        }
+        .oneicon{
+          position: relative;
+          left: 85%;
+         height: 40px;
+         width: 40px;
+          top: 3px;
+        
+        }
+        .pl{
+          height: 64px; width: 50%;  background: white; border-radius: 5px;
+        }
+        .froms{
+          width: 200px;
+          margin-left: 30px;
+        }
+
+        .two1 .texts{
+            position: relative;
+            top: 143px;
+            left: 50px;
+            font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+        
+        color: #666666;
+        }
+        
+            
+}    

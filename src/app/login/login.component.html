@@ -1,0 +1,33 @@
+<mat-card id="card" style="align-content: center;">
+    <h5 style="text-align: center;">SIGN IN</h5>
+    <hr>
+    <form name="form" [formGroup]="form" (ngSubmit)="onLoginClick(form)">
+      <div class="form-group">
+        
+        <input type="text" placeholder="Email Id" class="form-control" formControlName="email"
+          [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid}" />
+
+        <div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+          <div *ngIf="form.get('email').errors.required">Email Id is required</div>
+          <div *ngIf="form.get('email').errors.email">Email must be a valid email Address</div>
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+       
+        <input type="password" placeholder="Password" class="form-control" formControlName="password"
+          [ngClass]="{'is-invalid':form.get('password').touched && form.get('password').invalid}" />
+        <div *ngIf="form.get('password').touched && form.get('password').invalid" class="invalid-feedback">
+          <div *ngIf="form.get('password').errors.required">Password is required</div>
+          <div *ngIf="form.get('password').errors.minlength">Password must be a letaset 6 charector</div>
+        </div>
+       
+
+      </div>
+      <br>
+      <a style="margin-left: 20px; color: #666666;text-decoration-line: underline">Forgot Password?</a>
+      <div class="form-group" style="text-indent: 11em;">
+        <button class="btn btn-primary"  >Login</button>
+      </div>
+    </form>
+  </mat-card>

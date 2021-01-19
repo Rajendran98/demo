@@ -1,0 +1,30 @@
+.main{
+    background: #F5F5F5;
+    width: 100%;
+}
+
+.head{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #666666;
+}
+.mainpg{
+    background: #F5F5F5;
+    width: 100%;
+    padding: 20px 100px 20px 100px;
+
+}
+
+.imgs{
+    text-align: center;
+     border: 2px solid #666 !important;
+     border-radius: 10px;
+     color: #666666;
+       
+}
+.imgs:hover{
+    background:  #005F9E;
+    border: 2px solid#005F9E !important;
+    color: white;
+}
